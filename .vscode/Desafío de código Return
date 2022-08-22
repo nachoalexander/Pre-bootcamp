@@ -1,0 +1,112 @@
+function hello() {
+    console.log('hello');
+}
+
+hello();
+console.log('Dojo');
+// el console.log imprimiria hello y hola \\
+ 
+
+function hello() {
+    console.log('hello');
+    return 15;
+}
+var result = hello();
+console.log('result is', result);
+//el console.log imprimira hola y el resultado 15
+/* T diagrama
+Variables             |  Value
+result                |  hello(); 
+*/
+function numPlus(num) {
+    console.log('num is', num);
+    return num+15;
+}
+var result = numPlus(3);
+console.log('result is', result);
+// el console.log imprimiria el resultado el cual es 18
+/* T diagrama
+Variables             |  Value
+result                |  numPlus(3);
+*/
+
+
+var num = 15;
+console.log(num);
+
+function logAndReturn(num2){
+   console.log(num2);   
+   return num2;
+}
+var result = logAndReturn(10);
+
+console.log(result);
+console.log(num);
+//la funcion logAndReturn me muestra el dato ingresado 
+//y me va a mostrar variable num = 15.
+/* T diagrama
+Variables             |  Value
+result                |  logAndReturn(10);
+*/
+
+var num = 15;
+console.log(num);
+function timesTwo(num2){
+   console.log(num2);   
+   return num2*2;
+}
+var result = timesTwo(10);
+console.log(result);
+console.log(num);
+// el console.log imprimira los siguientes numeros 15,10,10,15
+/* T diagrama
+Variables             |  Value
+result                |   timesTwo(10); 
+num                   |  15;
+*/
+
+var num = 15;
+console.log(num);
+function timesTwo(num2){
+   console.log(num2);   
+   return num2*2;
+}
+var result = timesTwo(10);
+console.log(result);
+console.log(num);
+// el console.log imprimira los siguientes numeros 15,10,20,15
+/* T diagrama
+Variables             |  Value
+result                |   timesTwo(10); 
+num                   |  15;
+*/
+
+function sumNums(num1, num2) {  
+    return num1+num2;
+ }
+ console.log(sumNums(2,3))
+ console.log(sumNums(3,5))
+ cop
+ // el console.log imprimira el resultado el cual es 5 y 8  
+
+ function printSumNums(num1, num2) {
+    console.log(num1);   
+    return num1+num2;
+ }
+ console.log(printSumNums(2,3))
+ console.log(printSumNums(3,5))
+// el console.log emiprimira los resultado los cuales son 2,5,3,8
+
+function sumNums(num1, num2) {
+    var sum = num1 + num2;
+    console.log('sum is', sum);
+    return sum;
+}
+var result = sumNums(2,3) + sumNums(3,5);
+console.log('result is', result);
+cop
+// el console.log imprimira los siguientes numeros 8,5,2
+/* T diagrama
+Variables             |  Value
+result                |   sumNums(2,3) + sumNums(3,5); 
+*/
